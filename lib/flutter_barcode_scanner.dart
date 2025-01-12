@@ -16,6 +16,11 @@ class FlutterBarcodeScanner {
   static const EventChannel _eventChannel =
       EventChannel('flutter_barcode_scanner_receiver');
 
+  static Future<String> getPlatformVersion() async {
+    final version = await _channel.invokeMethod('getPlatformVersion');
+    return version ?? 'Unknown platform version';
+  }
+
   static Stream? _onBarcodeReceiver;
 
   /// Scan with the camera until a barcode is identified, then return.
