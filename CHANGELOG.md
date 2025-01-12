@@ -1,3 +1,8 @@
+## 3.0.0
+
+* Android: Upgraded code latest version
+* PR: #184 and #182
+
 ## 2.0.0
 
 * Android: Fixes #137 and #132
